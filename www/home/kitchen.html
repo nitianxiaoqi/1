@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>厨房环境监控</title>
+		<meta charset="UTF-8">
+
+		<style type="text/css">
+			.divtop {
+				width: 100%;
+				height: 100px;
+				background-image:url(../imge/kitchen_top.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.divmidde {
+				width: 100%;
+				position: absolute;
+				top: 100px;
+				bottom: 30px; 
+				background-image:url(../imge/kitchen.jpg);
+				background-size: 100% 100%;
+			}
+			
+			.divbottom{
+				width: 100%;
+				height: 30px;
+				position: absolute;
+				bottom: 0px;
+				background-color: #191970;
+			}
+			
+			.divtable2 {
+				float:left;
+				width: 30%;
+				height: 80%;
+				position: absolute;
+				margin-left: 0%;
+				bottom: 20%;
+				background-color: #696969;
+				opacity: 0.5;
+			}
+			.divtable3 {
+				float:left;
+				width: 30%;
+				height: 80%;
+				position: absolute;
+				margin-left: 33%;
+				bottom: 20%;
+				background-color: #696969;
+				opacity: 0.7;
+			}
+			.divtable4 {
+				float:left;
+				width: 30%;
+				height: 80%;
+				position: absolute;
+				margin-left: 70%;
+				bottom: 20%;
+				background-color: #696969;
+				opacity: 0.7;
+			}
+			.divtable5 {
+				float:left;
+				width: 15%;
+				height:10%;
+				position: absolute;
+				margin-left: 42%;
+				bottom: 3%;
+				background-color: #696969;
+				opacity: 0.7;
+			}
+		</style>
+
+	</head>
+	<body>
+	
+	<div class="divtop">
+		<center>
+		<b><h1><font color="#7CFC00" size="+5">厨 房 环 境 信 息</font></h1></b>
+		</center>
+	</div>
+	
+	<div class="divmidde">
+		<div class="divtable2">
+		<center>
+			<font color="#FFD700" size="+2">环境信息</font>
+			<iframe src="../cgi-bin/kitchen_view.cgi" height="310" width="300"></iframe>
+		</center>
+		</div>
+		
+		<div class="divtable3">
+			<center>
+				<font color="#FFD700" size="+2">阈值设置</font>
+				<form action="../cgi-bin/kitchen_set.cgi" method="get">
+				<br>
+				温度上限:
+				<input type="text" name="temp_up" value="" size=10/><br>
+				温度下限:
+				<input type="text" name="temp_low" value="" size=10/><br><br>
+				湿度上限:
+				<input type="text" name="hum_up" value="" size=10/><br>
+				湿度下限:
+				<input type="text" name="hum_low" value="" size=10/><br><br>
+				光强上限:
+				<input type="text" name="illu_up" value="" size=10/><br>
+				光强下限:
+				<input type="text" name="illu_low" value="" size=10/><br><br>
+				<br>
+				<input type="submit" name="set_button" value="提交" />
+				<input type="reset" name="reset" value="重置"/>
+				</form>		
+			</center>
+		</div>
+		<div class="divtable4">
+		<center>
+			<font color="#FFD700" size="+2">电器控制</font>
+			<form action="../cgi-bin/kitchen_dev.cgi" method="get"><br>
+				照明:<br>
+				<input type="radio" name="LED" value="ON">开
+				<input type="radio" name="LED" value="OFF"checked>关<br><br>
+				<br>空调:<br>
+				<input type="radio" name="FAN" value="ON">开
+				<input type="radio" name="FAN" value="OFF" checked>关<br><br>
+					
+				<br>加湿器:<br>
+				<input type="radio" name="BEEP" value="ON">开
+				<input type="radio" name="BEEP" value="OFF" checked>关<br><br>
+				<input type="submit" name="login_button" value="提交" />
+				<input type="reset" name="reset" value="重置"/>
+			</form>
+		</center>
+		</div>
+		<div class="divtable5" >
+		<a href="home_select.html" target="_top"><p
+					style="font-family:arial;color:red;font-size:20px;" align="center">返  回</p></a>
+</div>					
+	</div>
+	
+	<div class="divbottom">
+		<marquee  behavior=alternate scrollamount=5  Scroll amount=5>
+			<font STYLE='font:180px;color:#ff8c00;font-weight:bold;'><BIG>
+			@ 版权归. xxx团队所有.Emily：xxxx.com 
+			</font>
+		</marquee>
+	</div>
+		
+		
+	</body>
+</html>

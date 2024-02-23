@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<head>
+	<title>智慧云系统</title>
+	<meta charset="UTF-8">
+
+	<link rel="stylesheet" type="text/css" href="./css/myStyle.css" />
+
+	<style type="text/css">
+		.divall {
+			width: 100%;
+			height: 100%;
+			/*background-color:#000080;*/
+
+		}
+
+		.divtop {
+			width: 100%;
+			height: 100px;
+			background-image: url(./imge/top7.jpg);
+			background-size: 100% 100%;
+		}
+
+		.divmidde {
+			width: 100%;
+			position: absolute;
+			top: 100px;
+			bottom: 30px;
+			background-image: url(./imge/IOT_mid.jpg);
+			background-size: 100% 100%;
+		}
+
+		.divbottom {
+			width: 100%;
+			height: 30px;
+			position: absolute;
+			bottom: 0px;
+			background-color: #191970;
+		}
+
+		.divtable1 {
+			float: left;
+			width: 32%;
+			height: 50%;
+			position: relative;
+			top: 300px;
+			margin-left: 0%;
+			background: rgba(0, 0, 0, 0.8);
+			opacity: 0.8;
+			border-radius: 10px;
+			/* 设置边框圆角半径为 10px*/
+		}
+
+		.divtable2 {
+			float: left;
+			width: 32%;
+			height: 50%;
+			position: relative;
+			top: 300px;
+			margin-left: 2%;
+			background: rgba(0, 0, 0, 0.8);
+			opacity: 0.8;
+			border-radius: 10px;
+		}
+
+		.divtable3 {
+			float: right;
+			width: 32%;
+			height: 50%;
+			position: relative;
+			top: 300px;
+			margin-right: 0%;
+			background: rgba(0, 0, 0, 0.8);
+			opacity: 0.8;
+			border-radius: 10px;
+		}
+	</style>
+
+</head>
+<html>
+
+<body>
+	<form action="cgi-bin/login.cgi" method="POST">
+		<div class="divtop" align="center">
+			<h1>
+				<font color="#191970" size="+5">欢迎使用 物联网智慧云 系统</font>
+		</div>
+
+		<div class="divmidde">
+			<marquee bgcolor="#191970" behavior=alternate scrollamount=10 Scrollamount=0>
+				<font STYLE='font:18px;color:#00ced1;font-weight:bold;'><BIG>
+						撸起袖子加油干，打赢项目攻坚战
+				</font>
+			</marquee>
+			<div class="login-box">
+				<center>
+					<div class="login-field">
+						<input type="text" name="ID" required="" />
+						<label>用户名</label>
+					</div>
+					<br>
+					<br>
+					<div class="login-field">
+						<input type="password" name="PASSWORD" required="" />
+						<label>密码</label>
+					</div>
+					<br>
+					<br>
+					<button type="submit">登录</button>
+					<button type="reset">重置</button>
+					<center>
+			</div>
+			<div class="divtable2">
+				<h2 style="color:aqua" align="center">小猪佩奇团队介绍</h2>
+				<center>
+					<h3 style="color:#03a9f4">组员：</h3>
+					<h4 style="color:#ffffff">曹兴业 李文武 张德晨 董立坤</h4>
+					<br>
+					<h3 style="color:#03a9f4">应用程序：</h3>
+					<h4 style="color:#ffffff">app</h4>
+					<br>
+					<h3 style="color:#03a9f4">驱动程序：</h3>
+					<h4 style="color:#ffffff">dev</h4>
+				</center>
+			</div>
+			<div class="divtable3">
+				<h2 align="center" style="color:aqua">工 作 记 录 </h2>
+				<center>
+					<video width="400" height="270" controls="controls" autoplay="autoplay">
+						<source src="video/project.mp4" type="video/mp4" />
+						<object data="video/project.mp4" width="400" height="270"></object>
+					</video>
+				</center>
+			</div>
+
+		</div>
+		<div class="divbottom">
+			<marquee behavior=alternate scrollamount=5 Scroll amount=5>
+				<font STYLE='font:180px;color:#ff8c00;font-weight:bold;'><BIG>
+						@ 版权归. xxx团队所有.Emily：xxxx.com
+				</font>
+			</marquee>
+		</div>
+
+	</form>
+</body>
+
+</html>
